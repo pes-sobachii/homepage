@@ -2,7 +2,6 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -94,9 +93,6 @@ body {
 
 .contact-info__block--center {
    justify-content: center;
-   text-align: start;
-   flex: 1 1 auto;
-   padding-left: 60px;
 }
 
 .contact-info__item {
@@ -129,8 +125,8 @@ body {
 
 .contact-info__avatar {
    border-radius: 50%;
-   width: 140px;
-   height: 140px;
+   width: 100px;
+   height: 100px;
    object-fit: cover;
    border: 3px solid;
    border-color: var(--text-decoration-color);
@@ -268,11 +264,10 @@ body {
 }
 
 .tabs__title {
-   padding: 10px 30px;
+   padding: 10px 30px; 
    position: relative;
    cursor: pointer;
    border-bottom: 1px solid var(--border-color);
-   font-weight: 500;
 }
 
 .tabs__text {
@@ -399,49 +394,64 @@ body {
    font-size: 16px;
 }
 
-.title {
+.resume .title {
    margin-bottom: 20px;
 }
 
-.resume_item {
+.resume .resume_item {
    padding: 25px 0;
    border-bottom: 2px solid #b1eaff;
 }
 
-.resume_right .resume_item:last-child {
+.resume .resume_right .resume_item:last-child {
    border-bottom: 0px;
 }
 
-.resume_right .bold {
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+
+.resume .resume_right {
+   max-width: 520px;
+
+}
+
+.resume .resume_right .bold {
    color: var(--text-decoration-color);
 }
 
-.resume_right .resume_work ul,
-.resume_right .resume_education ul {
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
    padding-left: 40px;
    overflow: hidden;
 }
 
-.resume_right ul li {
+.resume .resume_right ul li {
    position: relative;
 }
 
-.resume_right ul li .date {
+.resume .resume_right ul li .date {
    font-size: 16px;
    font-weight: 500;
    margin-bottom: 15px;
 }
 
-.resume_right ul li .info {
+.resume .resume_right ul li .info {
    margin-bottom: 20px;
 }
 
-.resume_right ul li:last-child .info {
+.resume .resume_right ul li:last-child .info {
    margin-bottom: 0;
 }
 
-.resume_right .resume_work ul li:before,
-.resume_right .resume_education ul li:before {
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
    content: "";
    position: absolute;
    top: 5px;
@@ -453,8 +463,13 @@ body {
    list-style-type: none;
 }
 
-.resume_right .resume_work ul li:after,
-.resume_right .resume_education ul li:after {
+.resume .resume_right .resume_hobby ul {
+   display: flex;
+   justify-content: space-between;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
    content: "";
    position: absolute;
    top: 14px;
@@ -464,15 +479,41 @@ body {
    background: var(--text-decoration-color);
 }
 
+.resume .resume_right .resume_hobby ul li {
+   width: 80px;
+   height: 80px;
+   border: 2px solid #0bb5f4;
+   border-radius: 50%;
+   position: relative;
+   color: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+   font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+   content: "";
+   position: absolute;
+   top: 40px;
+   right: -52px;
+   width: 50px;
+   height: 2px;
+   background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+   display: none;
+}
+
 .resume_right li {
    list-style-type: none;
 }
 
-.first-title {
-   padding: 0px 30px 10px 30px;
+.first-title{
+   padding: 0px 30px 10px 30px; 
 }
 
-.first-title::after,
-.first-title::before {
+.first-title::after,.first-title::before{
    top: 12px
 }
