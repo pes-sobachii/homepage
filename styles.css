@@ -476,3 +476,21 @@ body {
 .first-title::before {
    top: 12px
 }
+
+@media screen and (max-width: 576px) {
+
+   .resume_right .resume_work ul li:before,
+   .resume_right .resume_education ul li:before {
+      background-color: var(--border-color);
+   }
+
+   .resume_right .resume_work ul li:after,
+   .resume_right .resume_education ul li:after {
+      height: 190px;
+   }
+   .contact-info__block--center {
+      justify-content: center;
+      text-align: center;
+      padding-left: 0;
+   }
+}
