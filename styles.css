@@ -31,7 +31,7 @@ body {
 .fv {
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: start;
 }
 
 .resume {
@@ -192,7 +192,7 @@ body {
    text-decoration-color: var(--text-decoration-color);
    text-decoration-line: underline;
    text-align: left;
-   margin-bottom: 20px;
+   margin-bottom: 0px;
 }
 
 .experiences__company-project {
@@ -203,14 +203,14 @@ body {
 .experiences__company-project-role {
    color: var(--durability-text-color);
    text-align: left;
-   margin-bottom: 10px;
+   margin: 10px 0;
    font-size: 15px;
 }
 
 .experiences__company-project-name {
    color: var(--primary-text-color);
    text-align: left;
-   margin-bottom: 10px;
+   margin-bottom: px;
 }
 
 .experiences__company-project-responsibilities {
@@ -394,8 +394,6 @@ body {
    font-size: 16px;
 }
 
-
-
 .resume .title {
    margin-bottom: 20px;
 }
@@ -510,4 +508,12 @@ body {
 
 .resume_right li {
    list-style-type: none;
+}
+
+.first-title{
+   padding: 0px 30px 10px 30px; 
+}
+
+.first-title::after,.first-title::before{
+   top: 12px
 }
